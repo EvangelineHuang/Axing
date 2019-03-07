@@ -93,11 +93,11 @@ var drawPlot=function(d,screen,svg)
   var xAxis=d3.axisBottom(xscale);
   svg.append("g")
      .call(xAxis)
-     .attr("transform","translate("+margin.left+","+(margin.top+height+10)+")")
+     .attr("transform","translate("+margin.left+","+(margin.top+height)+")")
   var yAxis=d3.axisLeft(yscale);
   svg.append("g")
      .call(yAxis)
-     .attr("transform","translate("+margin.left+","+(margin.top+10)+")")
+     .attr("transform","translate("+margin.left+","+(margin.top)+")")
 }
 data.then(function(d)
 {
