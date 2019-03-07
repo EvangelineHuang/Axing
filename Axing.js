@@ -98,6 +98,15 @@ var drawPlot=function(d,screen,svg)
   svg.append("g")
      .call(yAxis)
      .attr("transform","translate("+margin.left+","+(margin.top)+")")
+  svg.append("text")
+     .attr("x",width/2)
+     .attr("y",height+margin.top+30)
+     .text("Exams");
+     svg.append("text")
+        .attr("x",margin.left-20)
+        .attr("y",10)
+        .text("Grades");
+
 }
 data.then(function(d)
 {
